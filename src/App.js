@@ -1,5 +1,11 @@
 import './App.css';
-
-function App() {}
+import Feedback from './components/Render';
+function App() {
+  return (
+    <>
+      <Feedback />
+    </>
+  );
+}
 
 export default App;
