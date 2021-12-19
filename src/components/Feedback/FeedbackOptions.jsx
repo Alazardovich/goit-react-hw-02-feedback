@@ -7,7 +7,7 @@ const FeedbackOptions = ({ options, leaveFeedback }) => {
         const feedback = () => leaveFeedback(option);
         return (
           <li key={option}>
-            <button type="button" onClick={feedback(option)}>
+            <button type="button" onClick={feedback}>
               {option}
             </button>
           </li>
