@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { OptionsList, ListItem, Button } from './CSSFeedback';
 
 const FeedbackOptions = ({ options, leaveFeedback }) => {
   return (
-    <ul>
+    <OptionsList>
       {options.map(option => {
         const feedback = () => leaveFeedback(option);
         return (
-          <li key={option}>
-            <button type="button" onClick={feedback}>
+          <ListItem key={option}>
+            <Button type="button" onClick={feedback}>
               {option}
-            </button>
-          </li>
+            </Button>
+          </ListItem>
         );
       })}
-    </ul>
+    </OptionsList>
   );
 };
 FeedbackOptions.propTypes = {

@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import { ContainerSection, Title } from './CSSSection';
+
 function Section({ title, children }) {
   return (
-    <div>
-      {title && <h2>{title}</h2>}
+    <ContainerSection>
+      {title && <Title>{title}</Title>}
       {children}
-    </div>
+    </ContainerSection>
   );
 }
 Section.propTypes = {
